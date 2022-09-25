@@ -248,6 +248,23 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
 }
 LEADER_EXTERNS();
 
+void matrix_init_kb(void) {
+    // Pinky outer column: change the flags
+    g_led_config.flags[0] = 4;
+    g_led_config.flags[11] = 4;
+    g_led_config.flags[12] = 4;
+    g_led_config.flags[23] = 4;
+    g_led_config.flags[24] = 4;
+    g_led_config.flags[35] = 4;
+
+    g_led_config.flags[5] = 1;
+    g_led_config.flags[6] = 1;
+    g_led_config.flags[17] = 1;
+    g_led_config.flags[18] = 1;
+    g_led_config.flags[29] = 1;
+    g_led_config.flags[30] = 1;
+}
+
 void matrix_scan_user(void) {
   LEADER_DICTIONARY() {
     leading = false;
