@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_ADJUST] =  LAYOUT_wrapper( \
   RESET,   RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, RGB_SPI, RGB_SPD, _______,
-  _______, _______, _______, _______, _______, _______, _______, QWERTY,  XXXXXXX, DVORAK,  CHILDPROOF, XXXXXXX, \
+  KC_CAPS, _______, _______, _______, _______, _______, _______, QWERTY,  XXXXXXX, DVORAK,  CHILDPROOF, XXXXXXX, \
   _______, _______, OSWIN,   OSMACOS, OSLINUX, _______, _______, ___SEG4_MED___, KC_MPLY, \
   _______, _______, _______, XXXXXXX, _______,     _______,      _______, XXXXXXX, _______, _______, _______ \
 )
